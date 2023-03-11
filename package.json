@@ -1,18 +1,18 @@
 {
-  "name": "u-develop-it",
+  "name": "vote-api",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "directories": {
-    "lib": "lib"
-  },
+  "description": "Back-end APIs for a voting app.",
+  "main": "server.js",
   "scripts": {
     "test": "jest",
-    "migrate": "sqlite3 db/seeds.sql > db/schema.sql",
-    "seed": "sqlite3 db/schema.db > db/seeds.sql",
+    "start": "node server.js",
+    "migrate": "sqlite3 db/election.db > db/schema.sql",
+    "seed": "sqlite3 db/election.db < db/seeds.sql",
     "db": "sqlite3 db/election.db",
-    "start": "node server.js"
-  },
+  
+  "author": "",
+  "license": "ISC"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DrewMax/u-develop-it.git"
